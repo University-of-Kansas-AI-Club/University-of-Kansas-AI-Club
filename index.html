@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>KU AI CLUB</title>
+</head>
+<body class="bg-kansas-white text-white h-screen flex">
+  <!-- Sidebar -->
+  <div class="w-16 bg-kansas-blue flex flex-col items-center py-4 space-y-4">
+    <div style="margin: 2%"></div>
+    <button onclick="showTab('home')" id="bhome" class="bg--kansas-blue p-4 rounded-full button"><i class="fas fa-home"></i></button>
+    <button onclick="showTab('meetings')" id="bmeetings" class="bg--kansas-blue p-4 rounded-full button"><i class="fas fa-calendar"></i></button>
+    <button onclick="showTab('about')" id="babout" class="bg--kansas-blue p-4 rounded-full button"><i class="fas fa-info-circle"></i></button>
+    <button onclick="showTab('projects')" id="bprojects" class="bg--kansas-blue p-4 rounded-full button"><i class="fas fa-tasks"></i></button>
+    <button onclick="showTab('contact')" id="bcontact" class="bg--kansas-blue p-4 rounded-full button"><i class="fas fa-envelope"></i></button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex-1 flex flex-col">
+    <!-- Header -->
+    <div class="bg-kansas-white p-4 flex justify-between items-center">
+      <div class="font-bold "></div>
+      
+    </div>
+
+
+
+    <!-- tab1 -->
+     <section id="home" class="tab active">
+      <!-- Introduction Section -->
+    <section class="mb-8 p-4 rounded ">
+      <h1 class="text-3xl font-bold text-kansas-blue mb-4">Welcome to the KU AI Club</h1>
+      <p class="text-gray-400">
+        The University of Kansas AI Club is a student-led organization dedicated to exploring the fascinating world of artificial intelligence. We provide a platform for students to collaborate, learn, and innovate in the field of AI.
+      </p>
+    </section>
+
+    <!-- Events Section -->
+    <section class="mb-8 p-4 rounded ">
+      <h2 class="text-2xl font-bold text-kansas-blue mb-4">Upcoming Events</h2>
+      <ul class="list-disc list-inside text-gray-400">
+        <li>Event - Date</li>
+        <li>Event - Date</li>
+        <li>Event -Date</li>
+      </ul>
+    </section>
+    </section>
+
+    <!-- meetings -->
+    <section id="meetings" class="tab">
+      <div class="flex-1 overflow-y-auto p-4">
+        <div class="mb-4">
+          <h1 class=" text-3xl font-bold text-kansas-blue">Upcoming Meetings</h1>
+          <table class="border-gray-400">
+            <thead>
+            <tr class=" text-2xl font-bold text-kansas-blue"><td>Date</td><td>Topic</td><td>Status</td></tr>
+            </thead>
+            <tr><td>EX</td><td>EX</td><td>EX</td></tr>
+          </table>
+        </div>
+    </section>
+
+
+
+    <!-- about -->
+    <section id="about" class="tab">
+      <div class="flex-1 overflow-y-auto p-4">
+        <div class="mb-4">
+          <h1 class=" text-3xl font-bold text-kansas-blue">About the AI Club</h1>
+          <div class="text-gray-400">Content HERE</div>
+          <h2 class=" text-2xl font-bold text-kansas-blue">2024-2025 Members</h2>
+          <h2 class=" text-2xl font-bold text-kansas-blue">2023-2024 Members</h2>
+        </div>
+    </section>
+
+
+
+    <!-- tab3 -->
+      <section id="projects" class="tab">
+        <div class="flex-1 overflow-y-auto p-4">
+          <h1 class=" text-3xl font-bold text-kansas-blue" style="margin-bottom: 5px;">Projects</h1>
+          <h1 class=" text-3xl font-bold bg-kansas-blue" style="margin: .5%; height:10px;"></h1>
+          <!---Project Template-->
+          <a href="GITHUB LINK HERE">
+            <div class="bg-kansas-blue rounded p-4 project">
+              <h4 class="font-bold">Title</h4>
+              <p class="text-gray-400">Description</p>
+              <p class="text-gray-400">Authors</p>
+            </div>
+          </a>
+          <a href="GITHUB LINK HERE">
+            <div class="bg-kansas-blue rounded p-4 project">
+              <h4 class="font-bold">Title</h4>
+              <p class="text-gray-400">Description</p>
+              <p class="text-gray-400">Authors</p>
+            </div>
+          </a>
+          <a href="GITHUB LINK HERE">
+            <div class="bg-kansas-blue rounded p-4 project">
+              <h4 class="font-bold">Title</h4>
+              <p class="text-gray-400">Description</p>
+              <p class="text-gray-400">Authors</p>
+            </div>
+          </a>
+          <a href="GITHUB LINK HERE">
+            <div class="bg-kansas-blue rounded p-4 project">
+              <h4 class="font-bold">Title</h4>
+              <p class="text-gray-400">Description</p>
+              <p class="text-gray-400">Authors</p>
+            </div>
+          </a>
+        </div>
+       </section>
+  
+    <!-- tab4 -->
+    <section id="contact" class="tab">
+      <div class="flex-1 overflow-y-auto p-4">
+        <div class="mb-4">
+          <h1 class="text-3xl font-bold text-kansas-blue mb-4">Contact Us</h1>
+        </div>
+        <div class="mb-4">
+          
+          <form id="emailForm">
+            <div class="mb-4">
+              <label for="email" class="block text-gray-400 mb-2">Email:</label>
+              <input type="email" id="email" name="email" class="w-full p-2 border border-signature-gray rounded" required>
+              <input type="textarea" id="content" name="content" class="w-full p-2 border border-gray-400 rounded" required>
+            </div>
+            <button type="submit" class="bg-kansas-blue text-white p-2 rounded ">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+    
+
+  
+  <script>
+    function showTab(tabId) {
+      // Hide all tab content
+      var tabs = document.querySelectorAll('.tab');
+      tabs.forEach(function(tab) {
+        tab.classList.remove('active');
+      });
+      var button = document.querySelectorAll('.button');
+      button.forEach(function(button) {
+        button.classList.remove('active');
+      });
+       // Show the selected tab content
+      var activeTab = document.getElementById(tabId);
+      activeTab.classList.add('active');
+
+      var activeButton = document.getElementById("b"+tabId);
+      activeButton.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      showTab('home');
+    });
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+</body>
+</html>
