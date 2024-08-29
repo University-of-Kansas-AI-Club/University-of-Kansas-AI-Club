@@ -722,20 +722,20 @@ video {
   }
   .bg-kansas-blue {
     --tw-bg-opacity: 1;
-    background-color: rgb(153 0 0 / var(--tw-bg-opacity));
+    background-color: rgb(42 79 168 / var(--tw-bg-opacity));
   }
 
   .bg-kansas-white {
     --tw-bg-opacity: 1;
-    background-color: rgb(25 25 25 / var(--tw-bg-opacity)); /* Signature Gray */
+    background-color: rgb(18 22 32/ var(--tw-bg-opacity)); 
   }
  .text-kansas-blue {
   --tw-text-opacity: 1;
-  color: rgb(232 0 13 / var(--tw-text-opacity)); /* Crimson */
-    }
+  color: rgb(0 81 186 / var(--tw-text-opacity)); 
+}
   .text-gray-400 {
       --tw-text-opacity: 1;
-      color: rgb(255 255 255 / var(--tw-text-opacity)); /* Kansas White */
+      color: rgb(255 255 255 / var(--tw-text-opacity)); 
     }
     .project:hover{
       border: 3px solid #b7ba06 ;
@@ -745,11 +745,11 @@ video {
     
   .text-signature-gray {
      --tw-text-opacity: 1;
-      color: rgb(255 255 255 / var(--tw-text-opacity)); /* Kansas White */
+      color: rgb(255 255 255 / var(--tw-text-opacity)); 
     }
   .text-kansas-white {
     --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity)); /* Kansas White */
+    color: rgb(255 255 255 / var(--tw-text-opacity)); 
   }
 
 
@@ -760,7 +760,7 @@ table {
   margin: 20px 0;
   font-size: 18px;
   text-align: left;
-  background-color: #f8f8f8;
+ 
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -768,7 +768,7 @@ table {
 
 table thead tr {
   
-  color: #ffffffde;
+  
   text-align: left;
   font-weight: bold;
   margin: 20px 0;
@@ -777,6 +777,7 @@ table thead tr {
 
 table th, table td {
   padding: 12px 15px;
+
 
 }
 
